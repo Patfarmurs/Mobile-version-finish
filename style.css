@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 nav img {
@@ -33,7 +33,7 @@ nav span {
 .headline {
   height: auto;
   width: 100%;
-  background-image: url("./img/desktop-hero-image.svg");
+  background-image: url('./img/desktop-hero-image.svg');
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -99,7 +99,7 @@ nav span {
 .card-title {
   width: 295px;
   height: 57px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -121,14 +121,14 @@ nav span {
   border-radius: 4px;
   padding: 12px 8px;
   background: #ebf0ee;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   text-align: center;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
+  background: #36b37f;
 }
 
 .see-project-btn {
@@ -139,7 +139,7 @@ nav span {
   width: 122px;
   left: calc(50% - 122px / 2 + 0.5px);
   bottom: 24px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -168,19 +168,21 @@ nav span {
   }
 
   .headline {
-    background-image: url("./img/mobile-hero-image.svg");
+    background-image: url('./img/mobile-hero-image.svg');
   }
 }
 
 .card-holder-container {
-  width: 327px;
   height: 352px;
   border-radius: 8px;
+  display: flex;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   margin-top: 24px;
-  display: grid;
-  grid-template-columns: auto;
+  /* display: grid; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-tags-container {
@@ -189,17 +191,23 @@ nav span {
   flex-direction: row;
   align-items: center;
   padding: 12 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  letter-spacing: 00.03em;
+  flex-wrap: wrap;
+  /* flex: none; */
+  /* order: 0; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* flex-grow: 0; */
+  /* letter-spacing: 00.03em; */
+  width: 95%;
+  justify-content: center;
 }
 
 .tags-item {
   border-radius: 4px;
   padding: 12px 8px;
   background: #ffffff;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -207,6 +215,7 @@ nav span {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+  margin: 3px;
 }
 
 .holder-title {
@@ -216,19 +225,20 @@ nav span {
   line-height: 32px;
 }
 
-.holder-image {
-  margin-top: 40px;
-  margin-right: 124px;
-  margin-left: 123px;
-}
-
 .last-article-container {
   margin-bottom: 24px;
-  width: 327px;
+  justify-content: center;
+  /* width: 90%; */
   /* height: 352px; */
   background-image: url(img/about-me-bg.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 371px 501px;
+  /* align-items: center; */
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
 .about-myself {
@@ -276,7 +286,6 @@ nav span {
   border-radius: 5px;
 }
 .last-title-container {
-  width: 327px;
   height: 363px;
   font-size: 40;
   font-weight: 700;
@@ -284,4 +293,19 @@ nav span {
   text-align: center;
   line-height: 52px;
   color: #172b4d;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
 }
